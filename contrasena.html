@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Validación</title>
+</head>
+<body>
+	<div class="form">
+		<form action="">
+			<h1>FORMULARIO DE REGISTRO</h1>
+			<!-- El email se validará desde html ya que su type es email y también tiene el atributo required -->
+			<label for="email">Email:
+			</label>
+			<input type="email" id="email" name="email" placeholder="Introduce tu email" required>
+			<br><br>
+			<label for="text">Contraseña:</label>
+			<input type="text" id="password" name="text" placeholder="Introduce la contraseña">
+			<br><br>
+			<label for="text">Confirmar contraseña:</label>
+			<input type="text" id="confirmpassword" name="text" placeholder="Confirma la contraseña">
+			<br><br>
+			<button type="button" onclick="validarPassword()">REGISTRO</button>
+			<p id="message"></p>
+		</form>
+	</div>
+	
+	<script src="contrasena.js"></script>
+</body>
+</html>
